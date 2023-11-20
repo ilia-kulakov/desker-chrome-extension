@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Desker Options</title>
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+        <link href="./css/popup.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="desker-popup-dialog">
+            <div class="container-fluid">
+                <h2>Desker Settings</h2>
+            </div>            
+            <div class="container-fluid py-1">
+                <label for="desker-url" class="form-label">Desker URL</label>
+                <input class="form-control form-control-sm" id="desker-url" placeholder="http://localhost:8081">
+            </div>
+            <div class="row container-fluid py-1">
+                <div class="col">
+                    <button type="button" class="btn btn-success" id="fetch-settings">Fetch Settings</button>
+                </div>
+                <div class="col">
+                    <div class="alert alert-success" style="visibility:hidden"  role="alert" id="fetch-alert">
+                        Settings were fetched.
+                    </div>
+                </div> 
+            </div>            
+            <hr/>
+            <div class="container-fluid py-1">
+                <label for="reservation-service-url" class="form-label">Reservation Service URL</label>
+                <input class="form-control form-control-sm" id="reservation-service-url" placeholder="https://desk.site.com/api/reservations">
+            </div>
+            <div class="container-fluid py-1">
+                <label for="asset-id" class="form-label">Seat ID(s) (assetId)</label>
+                <input class="form-control form-control-sm" id="asset-ids">
+            </div>
+            <div class="container-fluid py-1">
+                <label for="party-id" class="form-label">Employee ID (partyId)</label>
+                <input class="form-control form-control-sm" id="party-id">
+            </div>
+            <div class="container-fluid py-1">
+                <label for="shift-days" class="form-label">Advance in days</label>
+                <input class="form-control form-control-sm" type="number" min="0" id="shift-days">
+            </div>
+            <div class="row container-fluid py-1">
+                <div class="col">
+                    <button type="button" class="btn btn-primary" id="save">Save Settings</button>
+                </div>
+                <div class="col">
+                    <div class="alert alert-success" style="visibility:hidden"  role="alert" id="save-alert">
+                        Options saved.
+                    </div>
+                </div>              
+                
+            </div>            
+        </div>
+        <script src="./js/popup.js"></script>
+    </body>
+</html>

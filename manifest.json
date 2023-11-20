@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Desker",
+    "description": "Extension allows to save cookies and config Desker Application",
+    "version": "0.1",
+    "action": {
+      "default_icon": "desker.png",
+      "default_popup": "./src/popup.html"
+    },
+    "background": {
+        "service_worker": "./src/js/service-worker.js"
+    },
+    "permissions": [
+        "cookies",
+        "storage"
+    ],
+    "host_permissions": [
+        "*://desk.epam.com/",
+        "*://localhost/"
+    ],
+    "options_ui": {
+        "page": "./src/options.html",
+        "open_in_tab": true
+    }
+  }

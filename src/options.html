@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Desker Extension Options</title>
+    <link rel="stylesheet" href="./css/options.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Desker URL -->
+    <div class="desker-option">
+        <label for="limit" class="form-label col">Desker URL:</label>
+        <input type="text" class="form-control col" id="desker-url">
+    </div>
+    <!-- Reservation Service URL -->
+    <div class="desker-option">
+        <label for="limit" class="form-label col">Reservation Service URL:</label>
+        <input type="text" class="form-control col" id="reservation-service-url">
+    </div>
+    <!-- Seat ID -->
+    <div class="desker-option">
+        <label for="limit" class="form-label col">Seat ID (assetId):</label>
+        <input type="text" class="form-control col" id="asset-id"> 
+    </div>
+    <!-- Employee ID -->
+    <div class="desker-option">
+        <label for="limit" class="form-label col">Employee ID (partyId):</label>
+        <input type="text" class="form-control col" id="party-id"> 
+    </div>
+    <!-- Advance in days -->
+    <div class="desker-option">
+        <label for="limit" class="form-label col">Advance in days:</label>
+        <input type="text" class="form-control col" id="shift-days">
+    </div>
+    <!-- Save -->
+    <input type="submit" class="btn btn-primary" id='save' value='Save'>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/options.js"></script>
+  </body>
+</html>
